@@ -6,6 +6,9 @@
     <h2>Give your feedback!</h2>
 
     {% for conference in conferences %}
+        <p>
+            <a href="{{ path('conference', { id: conference.id }) }}">View</a>
+        </p>
         <h4>{{ conference }}</h4>
     {% endfor %}
 {% endblock %}
